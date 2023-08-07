@@ -34,7 +34,7 @@ class AppreciationMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address('jeffrey@example.com', 'Jeffrey Way'),
+            from: new Address('vueshop@gmail.com', 'Vue Shop'),
             subject: 'Thank you for contacting us!',
         );
     }

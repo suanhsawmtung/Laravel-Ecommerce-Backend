@@ -26,7 +26,7 @@ class ProviderLoginController extends Controller
         ])->first();
 
         if($db_user){
-            return Redirect::to('http://localhost:5173/login?message=email-duplicate');
+            return Redirect::to('https://vue-ecommerce-shop.netlify.app/login?message=email-duplicate');
         }
 
         $user = User::updateOrCreate([
@@ -43,7 +43,7 @@ class ProviderLoginController extends Controller
 
         Session::put('email', $providerUser->email);
 
-        return Redirect::to('http://localhost:5173/login?email='.$providerUser->email);
+        return Redirect::to('https://vue-ecommerce-shop.netlify.app/login?email='.$providerUser->email);
     }
 
     /* Provider Login */

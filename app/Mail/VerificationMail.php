@@ -31,7 +31,7 @@ class VerificationMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address('jeffrey@example.com', 'Jeffrey Way'),
+            from: new Address('vueshop@gmail.com', 'Vue Shop'),
             subject: 'Email Verification To Reset Password.',
         );
     }
@@ -46,7 +46,7 @@ class VerificationMail extends Mailable
         return new Content(
             markdown: 'emails.verification',
             with: [
-                'url' => 'http://localhost:5173/forgotPassword/resetPassword?token='.$this->token
+                'url' => 'https://vue-ecommerce-shop.netlify.app/forgot-password/resetPassword?token='.$this->token
             ]
         );
     }

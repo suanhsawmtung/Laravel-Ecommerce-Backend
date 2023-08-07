@@ -35,7 +35,7 @@ class ResetPasswordController extends Controller
                     ->where('email', $validated['email'])
                     ->value('token');
 
-        Mail::to($validated['email'])->send(new VerificationMail($token));
+        Mail::to($validated['email'])->queue(new VerificationMail($token));
 
         return response()->json(['token' => $token]);
     }

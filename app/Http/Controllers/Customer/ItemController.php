@@ -54,6 +54,10 @@ class ItemController extends Controller
 
         $data = OrderList::where('created_at', '>=', $date)->get();
 
+        if($data){
+            return response()->json(['items' => []]);
+        }
+
         $record = [];
 
         foreach($data as $order){

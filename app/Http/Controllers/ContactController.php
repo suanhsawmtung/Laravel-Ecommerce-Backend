@@ -23,7 +23,7 @@ class ContactController extends Controller
         ]);
 
         if($contact){
-            Mail::to($contact->email)->send(new AppreciationMail($contact));
+            Mail::to($contact->email)->queue(new AppreciationMail($contact));
             return response()->json(['status' => 'success']);
         }
 
