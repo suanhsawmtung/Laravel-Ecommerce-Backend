@@ -46,7 +46,7 @@ class VerificationMail extends Mailable
         return new Content(
             markdown: 'emails.verification',
             with: [
-                'url' => 'https://vue-ecommerce-shop.netlify.app/forgot-password/resetPassword?token='.$this->token
+                'url' => 'https://vue-ecommerce-shop.netlify.app/forgot-password/reset-password?token='.$this->token
             ]
         );
     }
