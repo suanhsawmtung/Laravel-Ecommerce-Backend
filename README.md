@@ -1,9 +1,9 @@
 
 # API for Vue Shop
 
-This Laravel Project is for building RESTful API for Vue Shop Ecommerce Project.
+This Laravel Project is for building RESTful API for Vue Shop E-commerce Project.
 
-Here you would find API development for both admin panel and customer panel.
+Here you would find API development for both the admin panel and the customer panel.
 
 
 
@@ -20,14 +20,14 @@ Here you would find API development for both admin panel and customer panel.
 
 #### Get all shopping items
 
-```http
-  GET https://nooneuse.shop/api/item/getAllItems
+```sh
+  https://nooneuse.shop/api/item/getAllItems
 ```
 
 #### Get item detail 
 
 ```sh
-  https://nooneuse.shop/api/getItem/{id}
+  https://nooneuse.shop/api/item/getItem/{id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -38,14 +38,14 @@ Here you would find API development for both admin panel and customer panel.
 #### Get the latest items
 
 ```sh
-  https://nooneuse.shop/api/getLatestItems
+  https://nooneuse.shop/api/item/getLatestItems
 ```
 
 
 #### Get search items with search key
 
 ```sh
-  https://nooneuse.shop/api/getSearchItems/{searchKey}
+  https://nooneuse.shop/api/item/getSearchItems/{searchKey}
 ```
 
 | Parameter | Type     | Description                       |
